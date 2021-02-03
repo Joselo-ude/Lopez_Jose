@@ -14,7 +14,7 @@
           <a class="nav-link" href="{{url('/libros/vislib')}}">Libros</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{url('/editoriales/visedi')}}">Editorial</a>
+          <a class="nav-link" href="{{url('/editoriales/visedi')}}">Editoriales</a>
         </li>
         
     </div>
