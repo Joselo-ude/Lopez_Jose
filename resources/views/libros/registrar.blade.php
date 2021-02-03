@@ -1,30 +1,38 @@
 @extends('master')
 @section('content')
-<form class="row g-3">
+<form action="({url('libros/registrar')})" method="POST">
+@csrf
   <div class="col-md-4">
     <label for="validationServer01" class="form-label">ISBN</label>
-    <input type="text" class="form-control is-valid" id="validationServer01" value="" required>
+    <input type="text" class="form-control is-valid" id="isbn" value="" required>
     <div class="valid-feedback">
       
     </div>
   </div>
   <div class="col-md-4">
     <label for="validationServer02" class="form-label">Titulo</label>
-    <input type="text" class="form-control is-valid" id="validationServer02" value="" required>
+    <input type="text" class="form-control is-valid" id="titulo" value="" required>
     <div class="valid-feedback">
       
     </div>
   </div>
   <div class="col-md-4">
     <label for="validationServer02" class="form-label">Cantidad</label>
-    <input type="text" class="form-control is-valid" id="validationServer02" value="" required>
+    <input type="text" class="form-control is-valid" id="cantidad" value="" required>
     <div class="valid-feedback">
       
     </div>
   </div>
   <div class="col-md-4">
     <label for="validationServer02" class="form-label">Precio</label>
-    <input type="text" class="form-control is-valid" id="validationServer02" value="" required>
+    <input type="text" class="form-control is-valid" id="precio" value="" required>
+    <div class="valid-feedback">
+      
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationServer02" class="form-label">Stock</label>
+    <input type="text" class="form-control is-valid" id="stock" value="" required>
     <div class="valid-feedback">
       
     </div>
@@ -41,9 +49,11 @@
     </select>
     
   <div class="col-12">
+   
     <button class="btn btn-primary" type="submit">Registrar</button>
   </div>
   <div class="col-12">
+  
     <button class="btn btn-primary" type="submit">Cancelar</button>
   </div>
 </form>

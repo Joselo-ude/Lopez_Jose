@@ -21,8 +21,9 @@ use App\Http\Controllers\visualizar;
 
 Route::get('/',[libreria::class,'getIndex'] );
 
-Route::get('libros/vislib',[libros::class,'vis'] );
-Route::get('libros/registrar',[libros::class,'reg'] );
+Route::get('libros/vislib',[libros::class,'showlib'] )->name('vislib');;
+Route::post('libros/vislib',[libros::class,'reg'] )->name('registro');
 
 Route::get('editoriales/visedi',[editoriales::class,'showedito'] );
+
 
