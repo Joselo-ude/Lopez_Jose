@@ -1,7 +1,7 @@
 @extends('master')
    @section('content')
         <h1>Productos Registrados</h1> 
-        <a class="btn btn-primary" href="libros/registrar" role="button">Registrar</a>
+        
         <button class="btn btn-primary" type="submit">Button</button>
         
         <h1>libros</h1> 
@@ -20,7 +20,7 @@
                         <p class="card-text">Stock: {{$s->stock}}</p>
                         <p class="card-text">Editorial: {{$s->editorial}}</p>
                         
-                        
+                        <button class="btn btn-primary" type="submit">Actualizar</button>
                          
                         </div>
                         </div>

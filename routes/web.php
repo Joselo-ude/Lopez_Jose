@@ -20,9 +20,10 @@ use App\Http\Controllers\visualizar;
 
 
 Route::get('/',[libreria::class,'getIndex'] );
+Route::get('libros/vislib',[libros::class,'regis'] )->name('regist');;
 
-Route::get('libros/vislib',[libros::class,'showlib'] )->name('vislib');;
-Route::post('libros/vislib',[libros::class,'reg'] )->name('registro');
+Route::get('libros/registrar',[libros::class,'vis'] )->name('registro');;
+Route::post('libros/registrar',[libros::class,'reg'] )->name('vislib');
 
 Route::get('editoriales/visedi',[editoriales::class,'showedito'] );
 
